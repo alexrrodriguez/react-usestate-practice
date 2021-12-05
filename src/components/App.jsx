@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 
 function App() {
-  var count = 0;
+  const [count, setCount] = useState(0);
 
   function increase() {
-    count++;
+    setCount(count + 1);
   }
 
   return (
